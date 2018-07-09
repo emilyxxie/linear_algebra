@@ -1,0 +1,68 @@
+SET TERMINOLOGY AND NOTATION:
+A set is an unordered collection of objects. Example: (X, E, S)
+
+A ⊆ B. This reads as A is a subset of B. This means that A and B are sets,
+and every element of A is also an element of B.
+
+A = B. Two sets are equal if they contain exactly the same elements.
+(There is no order among elements of a set).
+
+A convenient way to prove that A and B are equal is to prove that each is a
+subset of the other. The proof often consists of two parts:
+    1. a proof that A ⊆ B
+    2. a proof that B ⊆ A
+
+SET EXPRESSIONS:
+{ x ∈ R : x >= 0}
+The above is read as: "The set consisting of all elements x of the set of real
+numbers such that x is greater than or equal to 0." The colon here stands for
+"such that."
+
+There are two parts to the set expression:
+The part before the colon specifies where the elements of the set come from,
+and introduces a variable or variables that can be used in the second part. In
+this example, the R indicates that X belongs to real numbers.
+
+
+The part after the colon:
+This gives a rule that restricts which elements specified in the first part
+actually get to make it into the set. There are two parts to this set expression.
+The part before the colon.
+
+The analogous Python expression is a set comprehension:
+>>> S = { -4, 4, -3, -2, 2, -1, 1, 0}
+>>> {x for x in S if x >= 0}
+
+The python set comprehensions pretty closely match the mathematical notation.
+
+SET EXPRESSIONS - CONVENTION
+So, in math:
+
+      { x ∈ R : x >= 0 }
+
+But often, we leave out the "∈ R" part of it, with the context implied.
+It is considered clear what set of values x takes on.
+
+      {x : x >= 0}
+
+
+x: x² - 5/6x + 1/6 = 0 }
+
+This is the set of all X such that this equation holds, and it only has
+these two solutions: 1/2 and (something else I could not see on lecture slide.)
+
+SET TERMINOLOGY AND NOTATION
+Cardinality: If a set is finite, we use vertical bars to indicate how many
+elements it has. For example, set {A, O, 8, I} has cardinality of 4.
+It would be |4|.
+
+Cartesian Product
+A x B is the set of all pairs (a, b) where a ∈ A and b ∈ B. For example:
+
+      for A = {1, 2} and B = {w, x, y, z}, A x B is
+      {{1, w}, {2, w}, {1, x}, {2, x}, {1, y}, {2, y}, {1, z}, {2, z}}
+
+So this has a cartesian product of 8. You basically multiply the cardinality of
+one set by the cardinality of another.
+
+If A and B are finite sets, then |A x B| = |A| x |B|.
